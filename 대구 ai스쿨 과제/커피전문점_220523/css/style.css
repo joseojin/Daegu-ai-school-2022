@@ -1,0 +1,190 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&family=Inconsolata&family=Nanum+Gothic&family=Nanum+Pen+Script&family=Smooch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Inconsolata&family=Nanum+Gothic&family=Nanum+Pen+Script&family=Smooch&display=swap');
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    list-style: none;
+    max-width: 1200px;
+}
+a,h1{
+    font-family: 'Inconsolata', monospace;
+}
+/***** header *****/
+header{
+    width:100%;
+    position: fixed;
+    top:0;
+    z-index:999;
+}
+nav{
+    height: 55px;
+    background-color: black;
+}
+#header-nav{
+    text-align:center;
+    padding:5px;
+}
+#header-nav li{
+    display:inline-block;
+    color: white;
+    font-size: 22px;
+    margin: 10px 13px;
+}
+#header-nav li:first-child{
+    margin-right: 500px;
+}
+/* a 태그 */
+nav a:link, a:visited, a:active {
+    color: white;
+}
+nav a:hover {
+    color: darkred;
+}
+/* 첫번째 section */
+section{
+    width:100%;
+}
+#main .main-image{
+    width: 100%;
+    height: 500px;
+    background: url(../images/main.jpg) center no-repeat;
+    background-size: cover;
+    background-blend-mode: lighten;
+    background-color: rgba(154, 192, 242, 0.853);
+}
+#main .main-title{
+    text-align: center;
+    font-size: 30px; 
+    text-shadow: 3px 3px 3px gray;
+    padding-top: 150px;
+   
+}
+#main .main-text{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black; 
+    padding-top:15px;
+    padding-bottom:15px;
+    text-shadow: 2px 3px 3px gray;
+    
+}
+#main .main-title, main-text{
+    height:150px;
+    position: relative;
+}
+/* 공통 title*/
+#Coffee .Coffee-title, #Rewards .Reward-title, #Menu .Menu-title, #Order .Order-title{
+    font-size:50px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#Coffee .Coffee-text, #Menu .Menu-text, #Order .Order-text{
+    font-size: 20px;
+    text-align: center;
+    padding:50px;
+    margin-bottom: 30px;
+}
+/* 두번째 section */
+#Coffee .Coffee-images .image{
+    height: 400px;
+    padding-bottom: 50px;
+    padding-left: 25%;
+}
+/* 세번째 section */
+#Rewards{
+    width:100%;
+    height:500px;
+    background: linear-gradient(135deg, rgb(178, 255, 119), rgb(7, 126, 88));
+    margin-top:25px;
+    padding-top:25px;
+    margin-bottom: 50px;
+    clip-path: polygon(0 0%, 100% 10%, 100% 90%, 0% 100%);
+}
+#Rewards .Reward-title{
+    color:white;
+}
+#Rewards .table, tr, td{
+    border-bottom: solid 1px #fff;
+    border-collapse: collapse;
+    padding: 18px;
+    text-align: justify;
+}
+#Rewards .Rewards-content{
+    margin-left: 34%
+}
+/* 네번째 section */
+#Menu .Menu-title{
+    color:rgba(69, 144, 242, 0.853)
+}
+#Menu .Menu-images img{
+    max-width: 300px;
+    height: auto;
+    border-radius:50%;
+}
+#Menu .Menu-content{
+    display:flex;
+    margin-top:30px;
+    flex-wrap:nowrap; /* 그림과 글이 같은 줄에 보여줌*/
+}
+#Menu .Menu-text{
+	text-align: justify; /*양쪽 정렬 */
+}
+#Menu .Menu-text p{
+    font-family: 'Dongle', sans-serif;
+    font-size: 25px;
+}
+/* 다섯번째 section */
+#Order{
+    width:100%;
+    height:500px;
+    margin-top:25px;
+    padding-top:25px;
+    clip-path: polygon(0 0%, 100% 10%, 100% 100%, 0% 100%);
+    background: linear-gradient(to top, rgb(230, 100, 223), rgb(240, 179, 227) 60%);
+}
+#Order h1{
+    color:#fff;
+}
+#Order label{
+    color:#fff;
+    font-size: 17px;
+}
+#Order .Order-label{
+    height: 50px;
+    width:350px;
+    background-color: rgba(247, 241, 245, 0.429);
+    border: #fff;
+}
+#Order .Order-text{
+    font-size: 25px;
+    color:#fff;
+    font-family: 'Inconsolata', monospace;
+    padding-left:3px;
+}
+#Order .Order-submit{
+    height:50px;
+    width:350px;
+    background-color: black;
+    color:#fff;
+    cursor:pointer;
+}
+#Order .Order-text, .Order-label, .Order-submit{
+    margin-left: 36%;
+}
+/* footer */
+footer{
+    text-align: center;
+    border-top: 1px solid #fff;
+    margin-top:30px;
+}
+footer span{
+    text-decoration: underline;
+}
+footer .footer{
+    color:#fff;  
+}
