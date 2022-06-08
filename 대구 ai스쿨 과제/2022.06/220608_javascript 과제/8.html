@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const number = 10
+        console.log(++number)
+        console.log(number++)
+        console.log(++number)
+        console.log(number--)
+    </script>
+</body>
+</html>
+
+<!-- 오류 -->
+<!-- 8.html:12 Uncaught TypeError: Assignment to constant variable. 
+증감연산자의 경우 변수(var,let)이 가능하나, const는 상수이므로 성립되지 않는다.-->
