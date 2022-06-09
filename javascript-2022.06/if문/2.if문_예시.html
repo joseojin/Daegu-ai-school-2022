@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+           // if 문을 통한 오전/오후
+        // const date = new Date()
+        // const hours = date.getHours()
+        // if(hours < 12){
+        //     alert("오전입니다.")
+        // }
+        // if(hours >=12){
+        //     alert("오후입니다.")
+        // }
+        // if 문을 통한 현재 시간은 몇 시 입니다. 그래서 오전/ 오후 입니다
+        const date = new Date()
+        const hours = date.getHours()
+        if(hours < 12){
+            alert(`현재시간은 ${hours}시 입니다. 그래서 오전 입니다.`)
+        }
+        if(hours >= 12){
+            alert("현재시간은"+ hours +"시 입니다. 그래서 오후 입니다")
+        }
+    </Script>
+</body>
+</html>
