@@ -1,0 +1,63 @@
+<!-- 배열이란
+1) 배열. 여러 자료들 묶어서 활용 할 수 있는 자료들
+2) 배열은 요소로 구성되어 있다. 요소= element(엘리먼트)
+3) 배열은 0부터 시작
+4) index안에 연산도 가능하다.
+
+배열기본구조
+const array1 = [273, "문자열", true, [27,35],{}, "fun"]  
+배열안에 배열이 들어올 수도 있다.
+요소를 구분할때는 쉼표를 이용한다
+
+
+const str ="안녕하세요"
+str.length  글자 전체 길이가 5라고 함. length는 1부터 시작함
+str[3]  index는 처음부터 0,1,2,3 인 0부터 시작함 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+        const array1 = [273, 56, 25, 278, 365]
+        console.log(array1[1])
+    </Script>
+</body>
+</html>
+
+<!--push -->
+<!-- ex) array1.push(“딸기”) 또는 array1.push(3)
+만약 콘솔창에서 5 이런식으로 뜨는 것은 5번째로 추가했다는 것이다. 
+즉, push는 배열의 끝에 입력값을 추가하는 것이다.  -->
+
+<!-- splice -->
+<!-- array1.splice(인덱스, 제거갯수)
+splice(start[, deleteCount[, item1[, item2[, ...]]]])
+start: 배열의 변경을 시작할 인덱스. -->
+
+<!-- splice 관련해서 콤마와 온점
+
+1) 온점
+fs.splice(1.2)
+의 경우 배열이 1부터 시작한다. 그리고 그 1을 포함하여 우측으로 2개빼고는 전부 생략한다.
+소수지만 int로 인식한다.
+
+2) 콤마
+fs.splice(1,1)
+의 경우 	배열은 0부터 시작. 따라 (1,1)에서 첫 번째 1은 배열에서 사과를 의미하고
+두 번째 1은 그 요소를 몇가지 제거할 것인가 -->
+
+<!-- indexOf
+indexOf배열의 요소 중에 있는지 없는지를 알 수 있다. 
+배열의 요소에 있으면 1을 입력해주고 없으면 –1을 입력해주는데 이런 것으로 id 생성을 만들 수 있음.
+ex) –1이 나오면 game 등의 id 생성 불가능하다. 1이면 id 생성 가능하다.
+여기서는 배열이 0부터 시작한다. -->
+
+<!-- splice와 inexOf 같이 사용
+fsk.splice(fsk.indexOf('사과'),2) 이렇게 되면 ‘사과’ 2개 제거
+fsk.splice(fsk.indexOf('사과')) 뒤에 개수 지정하지 않으면 ‘사과’라는 것을 전부 제거 -->
