@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function
+            const input=prompt("년도를 입력하세요.")
+            const year =Number(input)
+            function leapyear(year){
+            if((leapyear%4 == 0) && (leapyear%100 !== 0)||(leapyear %400 ==0) ){
+               return alert(`${leapyear}은 윤년입니다.`)
+            }else{
+                return alert(`${leapyear}은 윤년이 아닙니다.`)
+            }leapyear(year)
+        }
+        // if-else문 
+            // var leapyear = prompt("년도를 입력하세요.")
+            // if((leapyear%4 == 0 && leapyear%100 !== 0)||leapyear %400 ==0 ){
+            //     alert(`${leapyear}은 윤년입니다.`)
+            // }else{
+            //     alert(`${leapyear}은 윤년이 아닙니다.`)
+            // } 
+    </script>
+</body>
+</html>
+
