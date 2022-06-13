@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+         function calcuSum(n){//calcuSum은 내장함수가 아니다. n은 매개변수(parameter)
+            let sum = 0; // 블록 변수 선언
+            
+            for(let i = 1; i<n+1; i++){
+                sum += i; //sum= sum +i;
+            }
+         document.write(sum); // 블록 변수 사용
+        }
+        calcuSum(10); // 결과값: 55, 10은 인수(argument)
+    </Script>
+</body>
+</html>
+
+<!-- 매개변수(parameter)
+- 함수를 실행하기 위해 필요하다고 지정하는 값
+- 함수를 선언할 때 함수 이름 옆의 괄호 안에 매개변수 이름을 넣음
+- 매개변수는 1개도 가능하고 2개도 가능하고 여러개도 가능하다.
+
+인수(argument)
+- 함수를 실행하기 위해 필요하다고 지정하는 값
+- 함수를 실행할 때 매개변수로 넘겨주는 값
+
+매개변수를 주면 주는 값(인수)에 따라 일반화가 가능하다. -->

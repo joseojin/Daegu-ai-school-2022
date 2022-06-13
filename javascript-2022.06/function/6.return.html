@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>return 문</title>
+</head>
+<body>
+    <Script>
+         function calcuSum(n){ //n은 매개변수(parameter)
+            let sum = 0; 
+            
+            for(let i = 1; i<n+1; i++){
+                sum += i;
+            }
+            return sum;
+        }
+        var result = calcuSum(10); // 결과값: 55, 10은 인수(argument)
+        document.write(result); 
+    </Script>
+</body>
+</html>
+
+<!-- <return 문>
+    - 함수를 실행한 결과값을 함수 밖으로 넘기는 문
+    - 반환된 값은 함수를 실행한 소스 위치로 넘겨짐. -->

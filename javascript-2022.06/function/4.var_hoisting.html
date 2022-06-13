@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+        var x= 100;
+        // var y; 라고 선언되어 있는 것으로 착각을 한다.
+        // 초기값을 100처럼 주지 않으면 default값이 undefined이다. 
+
+        function test(){
+            document.write("x is " + x +  ", y is "+ y);
+            var y = 200;
+        }
+        test(); 
+    </Script>
+</body>
+</html>
+
+<!-- <var 변수의 호이스팅>
+    - 변수를 선언하기 전에 변수를 사용하면?
+    -> 오류가 생기지 않는다.
+    -> 변수 선언이 앞에 있는 것처럼 끌어올려(hoisting)인식한다.
+    -> 실제 선언하지 않았지만 마치 선언한 것처럼 끌어올린 것처럼 인식함. -->
